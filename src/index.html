@@ -2,22 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Match Puzzle Travel - Solve colorful puzzles and explore the world! Collect souvenirs, unlock destinations, and enjoy a relaxing match-3 journey."
+    />
+    <meta
+      name="keywords"
+      content="Match Puzzle Travel, travel match game, world puzzle adventure, offline puzzle game, match 3 travel, cultural puzzle, global match quest"
+    />
+    <meta name="author" content="MatchThrill Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://matchthrillpuzzle.com" />
+    <meta
+      property="og:title"
+      content="Match Puzzle Travel - Match, Explore, and Discover the World!"
+    />
+    <meta
+      property="og:description"
+      content="Embark on a global match-3 journey! Solve puzzles themed after real destinations, collect souvenirs, and enjoy cultural adventures."
+    />
+    <meta
+      property="og:image"
+      content="https://matchthrillpuzzle.com/og-image.jpg"
+    />
+    <meta property="og:url" content="https://matchthrillpuzzle.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Match Puzzle Travel</title>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <load src="./partials/header.html" />
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <load src="./partials/home.html" />
+      <load src="./partials/description.html" />
+      <load src="./partials/advantages.html" />
+      <load src="./partials/features.html" />
+      <load src="./partials/reviews.html" />
+      <load src="./partials/how-to-play.html" />
+      <load src="./partials/faq.html" />
+      <load src="./partials/gallery.html" />
     </main>
-
+    <load src="./partials/mobile-menu.html" />
+    <load src="./partials/cookies-pop-up.html" />
     <load src="./partials/footer.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>

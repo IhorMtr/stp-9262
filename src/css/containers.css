@@ -1,0 +1,33 @@
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+footer {
+  padding-top: 28px;
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+
+  section {
+    padding-bottom: 68px;
+    padding-top: 68px;
+  }
+
+  footer {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+}
