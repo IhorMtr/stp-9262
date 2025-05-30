@@ -21,6 +21,20 @@
   --green-button: #99ed58;
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-style: normal;
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
