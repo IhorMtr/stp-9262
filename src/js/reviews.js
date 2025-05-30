@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     block.classList.add('visible');
 
     btn.classList.add('hidden');
-    btn.removeEventListener(openPagination);
+    btn.removeEventListener('click', openPagination);
   }
 });
