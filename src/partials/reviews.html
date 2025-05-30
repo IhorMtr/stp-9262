@@ -1,24 +1,49 @@
 <section id="reviews">
   <div class="container">
     <h2 class="review-title">User Reviews</h2>
+    <div class="reviews-wrapper">
+      <div class="reviews-first-group">
+        <ul class="reviews-list-first-group">
+          <li class="reviews-list-item">
+            <div class="reviews-list-item-header">
+              <h3 class="reviews-list-item-title">Olivia M.</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./img/reviews-stars-mobile.png    1x,
+                    ./img/reviews-stars-mobile-2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
 
-        <div class="swiper-container swiper--top">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">Data & Analytics</div>
-              <div class="swiper-slide">Prototyping</div>
-              <div class="swiper-slide">Research, Strategy & Design</div>
-              <div class="swiper-slide">Digital Product Design & Development</div>
-              <div class="swiper-slide">Mobile (App) Design</div>
-          </div>
-        </div>
-        <div class="swiper-container swiper--bottom">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">Research, Strategy & Design</div>
-              <div class="swiper-slide">Digital Product Design & Development</div>
-              <div class="swiper-slide">Mobile (App) Design</div>
-             <div class="swiper-slide">Data & Analytics</div>
-              <div class="swiper-slide">Prototyping</div>
-          </div>
-        </div>
-  
+                <source
+                  srcset="
+                    ./img/reviews-stars-desktop.png    1x,
+                    ./img/reviews-stars-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+
+                <img
+                  class="reviews-stars-img"
+                  src="./img/reviews-stars-mobile.png"
+                  alt="review stars"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="reviews-list-item-footer">
+              <blockquote class="reviews-item-review">
+                It's like a vacation in every level! Love how each puzzle feels
+                like I'm learning about a new culture.
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="reviews-second-group">
+        <ul class="reviews-list-second-group"></ul>
+      </div>
+    </div>
+  </div>
 </section>
