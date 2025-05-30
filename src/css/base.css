@@ -42,7 +42,8 @@ body {
 
 h1 {
   font-size: 34px;
-  border: 5px solid var(--blue-stroke);
+  -webkit-text-stroke: 8px var(--blue-stroke);
+  paint-order: stroke fill;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
   color: var(--yellow);
 }
@@ -53,17 +54,19 @@ h2 {
   font-size: 28px;
   letter-spacing: 0.04em;
   color: var(--white);
-  -webkit-text-stroke: 3px var(--blue);
+  -webkit-text-stroke: 6px var(--blue);
+  paint-order: stroke fill;
 }
 
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: 72px;
+    -webkit-text-stroke: 12px var(--blue-stroke);
   }
 
   h2 {
     font-size: 48px;
-    -webkit-text-stroke: 8px var(--blue);
+    -webkit-text-stroke: 12px var(--blue);
   }
 
   body {
