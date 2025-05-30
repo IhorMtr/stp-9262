@@ -34,6 +34,20 @@
   overflow: hidden;
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-style: normal;
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+
 body {
   font-family: var(--font-family);
   font-size: 14px;
