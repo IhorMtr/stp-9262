@@ -1,1 +1,62 @@
-<header class="header"></header>
+<header class="header">
+  <div class="container">
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item"><a href="#home">Home</a></li>
+        <li class="header-nav-list-item">
+          <a href="#description">Description</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#advantages">Advantages</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#features">Features</a>
+        </li>
+        <li class="header-nav-list-item header-active">
+          <a href="#home">
+            <picture>
+              <source
+                srcset="
+                  ./img/header-logo-mobile.png    1x,
+                  ./img/header-logo-mobile-2x.png 2x
+                "
+                media="(max-width: 320px)"
+              />
+              <source
+                srcset="
+                  ./img/header-logo-desktop.png    1x,
+                  ./img/header-logo-desktop-2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="header-logo"
+                src="./img/header-logo-mobile.png"
+                alt="website logo"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="header-nav-list-item header-active header-burger-li">
+          <button type="button" class="header-mob-button">
+            <svg class="header-burger-svg">
+              <use href="./img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#reviews">Reviews</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#how-to-play">How to Play</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#faq">FAQ</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

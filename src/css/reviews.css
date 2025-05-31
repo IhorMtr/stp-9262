@@ -1,0 +1,374 @@
+#reviews {
+  background-color: var(--yellow-von);
+}
+
+.duplicate {
+  display: none !important;
+}
+
+.reviews-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.reviews-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  isolation: isolate;
+}
+
+.reviews-list-item-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.reviews-list-item-header {
+  border-radius: 8px;
+  padding: 5px 23px;
+  width: 284px;
+  height: 29px;
+  box-shadow: 1px 0 30px 0 rgba(0, 0, 0, 0.05),
+    -1px 0 30px 0 rgba(0, 0, 0, 0.05);
+  background: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.reviews-list-item-header::before {
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: -18px;
+  content: '';
+  width: 25px;
+  height: 28px;
+  clip-path: polygon(
+    100% 0%,
+    4.445% 5.096%,
+    4.445% 5.096%,
+    3.457% 5.248%,
+    2.59% 5.574%,
+    1.857% 6.045%,
+    1.271% 6.633%,
+    0.847% 7.31%,
+    0.596% 8.049%,
+    0.534% 8.821%,
+    0.673% 9.597%,
+    1.026% 10.35%,
+    1.608% 11.051%,
+    35.679% 43.474%,
+    35.679% 43.474%,
+    36.397% 44.262%,
+    36.97% 45.11%,
+    37.397% 46.006%,
+    37.677% 46.935%,
+    37.809% 47.884%,
+    37.792% 48.84%,
+    37.626% 49.789%,
+    37.31% 50.718%,
+    36.842% 51.613%,
+    36.223% 52.46%,
+    1.134% 93.761%,
+    1.134% 93.761%,
+    0.633% 94.524%,
+    0.374% 95.317%,
+    0.337% 96.113%,
+    0.506% 96.883%,
+    0.861% 97.601%,
+    1.386% 98.238%,
+    2.061% 98.767%,
+    2.869% 99.16%,
+    3.792% 99.388%,
+    4.812% 99.425%,
+    100% 93.333%,
+    100% 0%
+  );
+
+  background: linear-gradient(270deg, #d49b29 0%, #f2de58 100%);
+}
+.reviews-list-item-header::after {
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: calc(100% - 8px);
+  content: '';
+  width: 25px;
+  height: 28px;
+  clip-path: polygon(
+    0% 0%,
+    95.555% 5.096%,
+    95.555% 5.096%,
+    96.543% 5.248%,
+    97.41% 5.574%,
+    98.143% 6.045%,
+    98.729% 6.633%,
+    99.153% 7.31%,
+    99.404% 8.049%,
+    99.466% 8.821%,
+    99.327% 9.597%,
+    98.974% 10.35%,
+    98.392% 11.051%,
+    64.321% 43.474%,
+    64.321% 43.474%,
+    63.603% 44.262%,
+    63.03% 45.11%,
+    62.603% 46.006%,
+    62.323% 46.935%,
+    62.191% 47.884%,
+    62.208% 48.84%,
+    62.374% 49.789%,
+    62.69% 50.718%,
+    63.158% 51.613%,
+    63.777% 52.46%,
+    98.867% 93.761%,
+    98.867% 93.761%,
+    99.367% 94.524%,
+    99.627% 95.317%,
+    99.663% 96.113%,
+    99.494% 96.883%,
+    99.139% 97.601%,
+    98.614% 98.238%,
+    97.939% 98.767%,
+    97.131% 99.16%,
+    96.208% 99.388%,
+    95.188% 99.425%,
+    0% 93.333%,
+    0% 0%
+  );
+
+  background: linear-gradient(270deg, #f2de58 0%, #d49b29 100%);
+}
+
+.reviews-list-item-footer {
+  border-radius: 0 0 20px 20px;
+  padding: 12px 16px;
+  width: 270px;
+  height: 88px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background: var(--beige);
+}
+
+.reviews-button {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 137%;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--black);
+  align-self: flex-end;
+  border: none;
+  background: none;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.reviews-list-first-group .reviews-list-item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.reviews-list-second-group .reviews-list-item:first-child {
+  margin-top: 32px;
+}
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.reviews-second-group {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .duplicate {
+    display: block !important;
+  }
+  .reviews-title {
+    margin-bottom: 76px;
+  }
+
+  .reviews-list-item-title {
+    font-size: 20px;
+  }
+
+  .reviews-item-review {
+    font-size: 18px;
+  }
+
+  .reviews-list-item-header {
+    padding: 4px 29px;
+    width: 374px;
+    height: 35px;
+  }
+
+  .reviews-list-item-footer {
+    padding: 14px 22px;
+    width: 360px;
+    height: 111px;
+  }
+
+  .reviews-button {
+    display: none;
+  }
+
+  .reviews-second-group {
+    display: block;
+  }
+
+  .reviews-list-first-group,
+  .reviews-list-second-group {
+    display: flex;
+    gap: calc(72px + 32px);
+  }
+
+  .reviews-list-first-group {
+    margin-bottom: 56px;
+  }
+
+  .reviews-list-item {
+    margin-bottom: 0;
+  }
+
+  #reviews {
+    overflow: hidden;
+  }
+
+  #reviews .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reviews-list-second-group .reviews-list-item:first-child {
+    margin-top: 0;
+  }
+
+  .reviews-br {
+    display: none;
+  }
+  .reviews-list-item-header::before {
+    top: 3px;
+    left: -19px;
+    width: 32px;
+    height: 33px;
+    clip-path: polygon(
+      100% 0%,
+      3.856% 5.174%,
+      3.856% 5.174%,
+      3.072% 5.304%,
+      2.388% 5.588%,
+      1.812% 6%,
+      1.357% 6.514%,
+      1.032% 7.105%,
+      0.848% 7.748%,
+      0.816% 8.416%,
+      0.946% 9.084%,
+      1.248% 9.727%,
+      1.734% 10.319%,
+      36.77% 43.964%,
+      36.77% 43.964%,
+      37.388% 44.653%,
+      37.881% 45.404%,
+      38.248% 46.201%,
+      38.488% 47.032%,
+      38.6% 47.884%,
+      38.584% 48.741%,
+      38.438% 49.591%,
+      38.163% 50.421%,
+      37.756% 51.215%,
+      37.218% 51.962%,
+      1.298% 94.627%,
+      1.298% 94.627%,
+      0.877% 95.271%,
+      0.648% 95.947%,
+      0.598% 96.63%,
+      0.711% 97.296%,
+      0.974% 97.92%,
+      1.373% 98.477%,
+      1.894% 98.941%,
+      2.523% 99.288%,
+      3.246% 99.493%,
+      4.049% 99.53%,
+      100% 93.333%,
+      100% 0%
+    );
+  }
+
+  .reviews-list-item-header::after {
+    top: 3px;
+    left: calc(100% - 9px);
+    width: 32px;
+    height: 33px;
+    clip-path: polygon(
+      0% 0%,
+      96.144% 5.174%,
+      96.144% 5.174%,
+      96.928% 5.304%,
+      97.612% 5.588%,
+      98.188% 6%,
+      98.643% 6.514%,
+      98.968% 7.105%,
+      99.152% 7.748%,
+      99.184% 8.416%,
+      99.054% 9.084%,
+      98.752% 9.727%,
+      98.266% 10.319%,
+      63.23% 43.964%,
+      63.23% 43.964%,
+      62.612% 44.653%,
+      62.119% 45.404%,
+      61.752% 46.201%,
+      61.512% 47.032%,
+      61.4% 47.884%,
+      61.416% 48.741%,
+      61.562% 49.591%,
+      61.837% 50.421%,
+      62.244% 51.215%,
+      62.782% 51.962%,
+      98.702% 94.627%,
+      98.702% 94.627%,
+      99.123% 95.271%,
+      99.352% 95.947%,
+      99.402% 96.63%,
+      99.289% 97.296%,
+      99.026% 97.92%,
+      98.627% 98.477%,
+      98.106% 98.941%,
+      97.477% 99.288%,
+      96.754% 99.493%,
+      95.951% 99.53%,
+      0% 93.333%,
+      0% 0%
+    );
+  }
+  /* sadfsdf */
+  @keyframes marquee-move-text {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .marquee-track {
+    padding-left: calc(72px + 32px);
+    display: flex;
+    width: max-content;
+    animation: marquee-move-text 10s linear infinite reverse;
+  }
+
+  .marquee-second-track {
+    padding-left: calc(72px + 32px);
+    display: flex;
+    width: max-content;
+    animation: marquee-move-text 10s linear infinite;
+  }
+}
