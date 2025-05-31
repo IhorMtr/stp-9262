@@ -8,6 +8,9 @@
 .header-nav {
   position: fixed;
   z-index: 100;
+  left: 50%;
+  top: 32px;
+  transform: translate(-50%);
 }
 
 .header-nav-list::before {
