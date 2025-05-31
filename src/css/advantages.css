@@ -21,44 +21,28 @@
 
 .advantage-img {
   border-radius: 15px;
-  display: block;
-  box-sizing: content-box;
 }
 
 .advantage-title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  letter-spacing: 0.04em;
-  color: #fff;
-  align-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1200px) {
   .advantage-title {
-    font-size: 48px;
     margin-bottom: 76px;
-    -webkit-text-stroke: 20px var(--blue);
   }
 }
 
 .advantages-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
 }
 
 @media screen and (min-width: 1200px) {
   .advantages-list {
-    align-items: center;
-    justify-content: flex-start;
-    gap: 37px;
+    gap: 26px;
   }
 }
 
@@ -77,9 +61,14 @@
     margin: 0;
     padding: 0;
   }
+
+  .part-2 {
+    gap: 30px;
+  }
 }
 
 .advantages-item-title {
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -90,15 +79,13 @@
 }
 
 .advantages-item-text {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  color: #101010;
 }
 
 @media screen and (min-width: 1200px) {
   .advantages-item-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -106,10 +93,7 @@
   .advantages-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 80px;
-    max-width: 996px;
   }
 }
 
