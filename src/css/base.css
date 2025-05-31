@@ -48,6 +48,10 @@ blockquote::after {
   content: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
   font-size: 14px;
