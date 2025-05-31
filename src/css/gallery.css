@@ -41,7 +41,7 @@
   .gallery-title {
     font-size: 48px;
     margin-bottom: 76px;
-    -webkit-text-stroke: 4px var(--white);
+    -webkit-text-stroke: 10px var(--white);
   }
 }
 
@@ -61,7 +61,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1199px) {
   .img-winter {
     display: block;
     margin: 0 auto;
@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-self: flex-end; /* выравнивание вниз */
+    align-self: flex-end;
   }
 }
 
@@ -190,5 +190,26 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .img-car {
+    margin-left: 110px;
+  }
+
+  .img-cubes {
+    position: relative;
+    top: 20px;
+  }
+
+  .two-small-img {
+    position: relative;
+    top: 60px;
+  }
+
+  .img-paris {
+    position: relative;
+    top: 60px;
   }
 }
