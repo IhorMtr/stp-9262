@@ -1,0 +1,99 @@
+.advantages-container {
+  background-color: #fff5b4;
+}
+
+.advantage-img {
+  border-radius: 15px;
+  display: block;
+  box-sizing: content-box;
+}
+
+.advantage-title {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 42px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-title {
+    font-size: 108px;
+
+    padding-top: 68px;
+    margin-bottom: 76px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+.part-1 {
+  margin-top: 32px;
+  margin-bottom: 39px;
+}
+
+.part-2 {
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .part-1,
+  .part-2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.advantages-item-title {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-item-title {
+    font-size: 20px;
+  }
+}
+
+.advantages-item-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #101010;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-item-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 80px;
+    max-width: 996px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-part-two {
+    flex-direction: row-reverse;
+    margin-top: 76px;
+    padding-bottom: 68px;
+  }
+}
