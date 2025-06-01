@@ -34,6 +34,20 @@
   white-space: nowrap;
 }
 
+@media only screen and (min-width: 1200px) {
+  .desc-highlight {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    color: #101010;
+    border-radius: 20px;
+    padding: 8px 22px;
+    width: 103px;
+    height: 39px;
+  }
+}
+
 .desc-yellow {
   background-color: #ffea5d;
 }
@@ -50,6 +64,13 @@
   background-color: #efb4ff;
   width: 120px;
   height: 21px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .desc-purple {
+    width: 207px;
+    height: 39px;
+  }
 }
 
 .desc-span-blue {
@@ -70,11 +91,21 @@
   font-family: 'Fredoka', sans-serif;
   font-size: 14px;
   color: #101010;
+  line-height: 23px;
+}
+
+.desc-text-part-one {
+  line-height: 17px;
 }
 
 @media only screen and (min-width: 1200px) {
   .desc-text {
     font-size: 24px;
+    line-height: 30px;
+  }
+
+  .desc-text-part-one {
+    line-height: 29px;
   }
 }
 
