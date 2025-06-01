@@ -18,12 +18,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 40px 16px;
+  padding: 16px;
 }
 
 @media only screen and (min-width: 1200px) {
   .gallery-container {
-    padding: 68px 22px;
+    padding: 22px;
   }
 }
 
@@ -53,16 +53,16 @@
   height: auto;
 }
 
-.img-cat {
+.gallery-img-cat {
   display: none;
 }
 
-.img-japan {
+.gallery-img-japan {
   display: none;
 }
 
 @media only screen and (min-width: 1199px) {
-  .img-winter {
+  .gallery-img-winter {
     display: block;
     margin: 0 auto;
     max-width: 288px;
@@ -71,14 +71,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .img-cat {
+  .gallery-img-cat {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
   }
 
-  .img-japan {
+  .gallery-img-japan {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -87,14 +87,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .the-biggest-wrapper {
+  .gallery-the-biggest-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
 }
 
-.wrapper-one {
+.gallery-wrapper-one {
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -102,14 +102,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .wrapper-one {
+  .gallery-wrapper-one {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
   }
 }
 
-.wrapper-two {
+.gallery-wrapper-two {
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
@@ -118,7 +118,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .wrapper-two {
+  .gallery-wrapper-two {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
@@ -126,7 +126,7 @@
   }
 }
 
-.two-small-img {
+.gallery-two-small-img {
   display: flex;
   flex-direction: column-reverse;
   gap: 16px;
@@ -134,14 +134,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .two-small-img {
+  .gallery-two-small-img {
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
   }
 }
 
-.small-wraper-two {
+.gallery-small-wraper-two {
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
@@ -150,7 +150,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .small-wraper-two {
+  .gallery-small-wraper-two {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -159,34 +159,34 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .big-wrapper {
+  .gallery-big-wrapper {
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
   }
 
-  .small-wraper-one {
+  .gallery-small-wraper-one {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  .img-japan-cat {
+  .gallery-img-japan-cat {
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
   }
 }
 
-.wrapper-three {
+.gallery-wrapper-three {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
 @media only screen and (min-width: 1200px) {
-  .wrapper-three {
+  .gallery-wrapper-three {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -194,21 +194,21 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .img-car {
+  .gallery-img-car {
     margin-left: 110px;
   }
 
-  .img-cubes {
+  .gallery-img-cubes {
     position: relative;
     top: 20px;
   }
 
-  .two-small-img {
+  .gallery-two-small-img {
     position: relative;
     top: 60px;
   }
 
-  .img-paris {
+  .gallery-img-paris {
     position: relative;
     top: 60px;
   }
