@@ -1,4 +1,4 @@
-.cookies-section {
+.policy-section {
   padding: 0;
 }
 
@@ -25,7 +25,7 @@
   margin-bottom: 32px;
 }
 
-.cookies-title {
+.policy-title {
   font-weight: 500;
   font-size: 16px;
   color: var(--black);
@@ -35,24 +35,24 @@
   margin-bottom: 17px;
 }
 
-.cookies-updated {
+.policy-updated {
   margin-bottom: 24px;
 }
 
-.cookies-updated strong {
+.policy-updated strong {
   font-weight: 500;
   font-size: 16px;
 }
 
-.cookies-intro-first {
+.policy-intro-first {
   margin-bottom: 24px;
 }
 
-.cookies-link-policy {
+.policy-link-policy {
   text-decoration: underline;
 }
 
-.cookies-subtitle {
+.policy-subtitle {
   margin-top: 24px;
   font-family: var(--font-family);
   font-weight: 500;
@@ -63,16 +63,16 @@
   paint-order: normal;
 }
 
-.cookies-list {
+.policy-list {
   padding-left: 22px;
   list-style-type: disc;
 }
 
-.cookies-list li::marker {
+.policy-list li::marker {
   font-size: 0.6em;
 }
 
-.cookies-types-list {
+.policy-types-list {
   margin-top: 24px;
   list-style-type: disc;
   display: flex;
@@ -80,22 +80,22 @@
   gap: 24px;
 }
 
-.cookies-type-title {
+.policy-type-title {
   padding-left: 22px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
 }
 
-.cookies-link-email {
+.policy-link-email {
   text-decoration: underline;
 }
 
-.cookies-main {
+.policy-main {
   padding-bottom: 40px;
 }
 
-.cookies-link-browser {
+.policy-link-browser {
   text-decoration: underline;
 }
 
@@ -103,13 +103,13 @@
   .policy-body {
     font-size: 16px;
   }
-  .cookies-container .cookies-title {
+  .policy-container .policy-title {
     font-size: 20px;
   }
-  .cookies-updated strong {
+  .policy-updated strong {
     font-size: 18px;
   }
-  .cookies-main {
+  .policy-main {
     padding-bottom: 68px;
   }
 }
