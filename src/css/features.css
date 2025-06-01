@@ -1,0 +1,83 @@
+/* Контейнер свёрнутых фич — flex, чтобы .stripe вытягивался по высоте .items */
+.features-collapsed {
+  display: flex;
+  background-color: #006fc9; /* тот же синий фон, что и в вашем дизайне */
+  padding: 20px; /* общий внутренний отступ вокруг всего блока */
+  border-radius: 8px; /* при желании скруглить углы */
+  color: #ffffff; /* белый текст внутри (если понадобится) */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Блок “полосы”: сверстан вертикально (column), чтобы линии растягивались между точками */
+.stripe {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* чтобы точка и линия были по центру контейнера .stripe */
+  margin-right: 16px; /* отступ справа, чтобы текст не прилепал к полосе */
+}
+
+/* Общий стиль для точек (верхней и нижней) */
+.dot {
+  width: 12px; /* диаметр точки */
+  height: 12px; /* диаметр точки */
+  border-radius: 50%; /* делаем её круглой */
+  background-color: #ffffff;
+  flex-shrink: 0; /* не даём точке сжиматься */
+}
+
+/* У верхней точки нет никаких дополнительных «отступов» */
+.top-dot {
+  /* если нужно чуть «отступить» от самого верха, можно добавить margin-top */
+  /* например: margin-top: 4px; */
+}
+
+/* Линия, которая тянется между двумя точками */
+.line {
+  width: 4px; /* толщина полосы */
+  background-color: #ffffff;
+  flex: 1; /* благодаря этому растянется по всей высоте .stripe между точками */
+  margin: 4px 0; /* небольшой отступ сверху и снизу, чтобы точка не «слипалась» */
+  border-radius: 2px; /* слегка скруглить уголки на линии */
+}
+
+/* Нижняя точка (аналогично верхней, без дополнительных отступов) */
+.bottom-dot {
+  /* при желании можно добавить margin-bottom, если нужен дополнительный зазор */
+}
+
+/* Контейнер с тремя пунктами. Он занимает всё пространство справа от .stripe */
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1; /* занять оставшееся пространство по ширине */
+}
+
+/* Пример базовой верстки одного пункта (feature-item) */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px; /* расстояние между пунктами */
+}
+
+/* Иконка в начале пункта */
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+/* Текстовая часть: заголовок и описание */
+.feature-text h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.feature-text p {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
