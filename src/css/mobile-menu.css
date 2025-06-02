@@ -1,0 +1,222 @@
+body.menu-open {
+  overflow: hidden;
+}
+
+.header-mob-button {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  z-index: 1003;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+  z-index: 1002;
+  width: 276px;
+  height: 441px;
+  max-width: calc(100% - 44px); /* 22px отступ с каждой стороны */
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu.is-open {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.menu-header {
+  position: relative;
+  width: 100%;
+  height: 47px;
+  border-radius: 8px;
+  background: var(--yellow);
+  box-shadow: 1px 0 30px 0 rgba(0, 0, 0, 0.05),
+    -1px 0 30px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* центровка кнопки */
+  padding: 8px 24px;
+}
+
+.menu-logo {
+  height: 40px;
+}
+
+.menu-close {
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #101010;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.menu-body {
+  background-color: #fff8ee;
+  width: 100%;
+  height: 100%;
+  padding: 28px 16px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.menu-list {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #101010;
+  gap: 16px;
+  text-align: center;
+}
+
+.menu-item a {
+  color: #101010;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #3b82d4; /* синий при наведении и фокусе */
+}
+
+.menu-item a:active {
+  color: #ffea5d; /* жёлтый при нажатии */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-header::before {
+  top: 4px;
+  left: -16px;
+  background: linear-gradient(270deg, #d49b29 0%, #f2de58 100%);
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 22px;
+  height: 44px;
+  clip-path: polygon(
+    100% 0%,
+    6.503% 5.194%,
+    6.503% 5.194%,
+    5.6% 5.291%,
+    4.787% 5.467%,
+    4.076% 5.713%,
+    3.479% 6.018%,
+    3.008% 6.37%,
+    2.675% 6.76%,
+    2.49% 7.177%,
+    2.466% 7.609%,
+    2.614% 8.046%,
+    2.947% 8.477%,
+    40.729% 45.93%,
+    40.729% 45.93%,
+    41.052% 46.288%,
+    41.31% 46.656%,
+    41.504% 47.031%,
+    41.632% 47.412%,
+    41.696% 47.796%,
+    41.694% 48.181%,
+    41.626% 48.566%,
+    41.493% 48.948%,
+    41.295% 49.324%,
+    41.03% 49.694%,
+    2.96% 96.371%,
+    2.96% 96.371%,
+    2.681% 96.857%,
+    2.622% 97.338%,
+    2.763% 97.8%,
+    3.087% 98.231%,
+    3.572% 98.619%,
+    4.202% 98.952%,
+    4.955% 99.217%,
+    5.814% 99.402%,
+    6.758% 99.495%,
+    7.769% 99.482%,
+    100% 93.333%,
+    100% 0%
+  );
+}
+
+.menu-header::after {
+  top: 4px;
+  left: calc(100% - 7px);
+  z-index: -1;
+  background: linear-gradient(270deg, #f2de58 0%, #d49b29 100%);
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 44px;
+  clip-path: polygon(
+    0% 0%,
+    93.497% 5.194%,
+    93.497% 5.194%,
+    94.4% 5.291%,
+    95.213% 5.467%,
+    95.924% 5.713%,
+    96.521% 6.018%,
+    96.991% 6.37%,
+    97.325% 6.76%,
+    97.51% 7.177%,
+    97.534% 7.609%,
+    97.385% 8.046%,
+    97.053% 8.477%,
+    59.271% 45.93%,
+    59.271% 45.93%,
+    58.948% 46.288%,
+    58.69% 46.656%,
+    58.496% 47.031%,
+    58.368% 47.412%,
+    58.304% 47.796%,
+    58.306% 48.181%,
+    58.373% 48.566%,
+    58.506% 48.948%,
+    58.705% 49.324%,
+    58.97% 49.694%,
+    97.04% 96.371%,
+    97.04% 96.371%,
+    97.319% 96.857%,
+    97.378% 97.338%,
+    97.237% 97.8%,
+    96.913% 98.231%,
+    96.428% 98.619%,
+    95.798% 98.952%,
+    95.045% 99.217%,
+    94.186% 99.402%,
+    93.242% 99.495%,
+    92.23% 99.482%,
+    0% 93.333%,
+    0% 0%
+  );
+}
