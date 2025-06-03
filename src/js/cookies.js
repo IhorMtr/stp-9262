@@ -1,28 +1,20 @@
-const popup = document.querySelector('[data-cookie-open]');
-export const popBtns = document.querySelectorAll('[data-btn-close]');
-const LS_KEY = 'pop-open';
+document.addEventListener('DOMContentLoaded', () => {
+  const popup = document.querySelector('.cookie-pop-page');
+  const buttons = document.querySelectorAll('[data-btn-close]');
+  const LS_KEY = 'cookie-popup-acknowledged';
 
-export function handleClosePopUp() {
-  if (!popup) return;
-  popup.dataset.cookieOpen = 'false';
-  popup.classList.remove('open');
-  setPopUp(false);
-}
-
-export function detectCookiePop() {
-  if (!popup) return;
-
-  const data = localStorage.getItem(LS_KEY);
-  if (data !== null) {
-    const popUpState = JSON.parse(data);
-    popup.dataset.cookieOpen = `${popUpState}`;
+  if (localStorage.getItem(LS_KEY) === 'true') {
+    return;
   }
-  if (popup.dataset.cookieOpen === 'true') {
-    popup.classList.add('open');
-  } else {
+
+  popup.classList.add('open');
+
+  const handleClose = () => {
     popup.classList.remove('open');
-  }
-}
-function setPopUp(state) {
-  localStorage.setItem(LS_KEY, JSON.stringify(state));
-}
+    localStorage.setItem(LS_KEY, 'true');
+  };
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', handleClose, { once: true });
+  });
+});

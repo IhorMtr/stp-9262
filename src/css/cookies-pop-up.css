@@ -10,6 +10,11 @@
   text-align: center;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: none;
+}
+
+.cookie-pop-page.open {
+  display: block;
 }
 
 .cookie-pop-container {
@@ -29,10 +34,6 @@
   .cookie-pop-section {
     margin-bottom: 32px;
   }
-}
-
-.cookie--pop.open {
-  transform: translateY(0);
 }
 
 .cookie-pop-wrapper {
