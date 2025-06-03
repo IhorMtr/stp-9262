@@ -128,7 +128,29 @@
     -1px 0 30px 0 rgba(0, 0, 0, 0.05);
   background: var(--yellow);
   align-items: center;
-  justify-content: space-between;
+}
+
+.header-nav-list-item-first-category {
+  margin-left: 19px;
+}
+
+.header-nav-list-item a:hover,
+.header-nav-list-item a:focus {
+  text-decoration: underline;
+}
+
+.header-nav-list-item a:active {
+  color: var(--blue-stroke);
+}
+
+.header-logo {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.header-nav-list-item-second-category {
+  margin-left: 35px;
+  white-space: nowrap;
 }
 
 .header-burger-svg {
