@@ -1,7 +1,14 @@
-const featuresWrapper = document.getElementById('featuresBlock');
-const toggleBtn = document.getElementById('toggleBtn');
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.querySelector('button[data-features-button]');
+  const blocks = document.querySelectorAll('li[data-features-block]');
+  const btnImg = document.querySelector('[data-features-btn-icon]');
 
-// По клику переключаем класс .collapsed
-toggleBtn.addEventListener('click', () => {
-  featuresWrapper.classList.toggle('collapsed');
+  function handleOpener() {
+    blocks.forEach(elem => {
+      elem.classList.toggle('features-disabled');
+    });
+
+    btnImg.classList.toggle('features-chevron-svg-rotated');
+  }
+  toggleBtn.addEventListener('click', handleOpener);
 });
