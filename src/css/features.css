@@ -3,6 +3,10 @@
   color: var(--white);
 }
 
+.features-list-item-desktop {
+  display: none;
+}
+
 .features-title {
   -webkit-text-stroke: 6px var(--white);
   color: var(--blue);
@@ -94,6 +98,14 @@
   box-shadow: 0 4px 30px 0 rgba(135, 250, 255, 0.8);
 }
 
+.features-line:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 4px 20px 0 #87faff;
+}
+
 .features-first-circle,
 .features-second-circle {
   position: absolute;
@@ -101,16 +113,15 @@
   background-color: var(--white);
   width: 14px;
   height: 14px;
+  left: -5px;
 }
 
 .features-first-circle {
   top: 0;
-  left: -5px;
 }
 
 .features-second-circle {
   bottom: 0;
-  left: -5px;
 }
 
 .features-main-wrapper {
@@ -123,4 +134,96 @@
 
 .features-chevron-svg-rotated {
   transform: scaleY(1);
+}
+
+@media screen and (min-width: 1200px) {
+  .features-disabled {
+    display: flex;
+  }
+
+  .features-button {
+    display: none;
+  }
+
+  .features-line {
+    left: 50%;
+  }
+
+  .features-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .features-list-item:nth-child(2),
+  .features-list-item:nth-child(4),
+  .features-list-item:nth-child(7) {
+    align-self: flex-start;
+  }
+
+  .features-list-item:nth-child(2) .features-image-wrapper,
+  .features-list-item:nth-child(4) .features-image-wrapper,
+  .features-list-item:nth-child(7) .features-image-wrapper {
+    order: 2;
+  }
+
+  .features-list-item-desktop {
+    z-index: 1;
+    display: flex;
+    align-self: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+  .features-list-item-desktop-p {
+    font-family: var(--second-family);
+    letter-spacing: 0.04em;
+    color: var(--blue);
+    paint-order: stroke fill;
+    font-size: 48px;
+    -webkit-text-stroke: 12px var(--white);
+  }
+
+  .features-text-wrapper {
+    width: auto;
+    max-width: 317px;
+  }
+
+  .features-text-paragraph {
+    font-size: 16px;
+  }
+
+  .features-text-title {
+    font-size: 20px;
+  }
+
+  .features-list {
+    gap: 28px;
+  }
+
+  .features-main-wrapper {
+    height: 1118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .features-first-circle,
+  .features-second-circle {
+    width: 24px;
+    height: 24px;
+    left: -10px;
+  }
+
+  .features-line {
+    height: 100%;
+    top: -10px;
+  }
 }

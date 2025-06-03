@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const blocks = document.querySelectorAll('li[data-features-block]');
   const btnImg = document.querySelector('[data-features-btn-icon]');
 
+  toggleBtn.addEventListener('click', handleOpener);
+
   function handleOpener() {
     blocks.forEach(elem => {
       elem.classList.toggle('features-disabled');
@@ -10,5 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnImg.classList.toggle('features-chevron-svg-rotated');
   }
-  toggleBtn.addEventListener('click', handleOpener);
 });
