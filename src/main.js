@@ -3,3 +3,4 @@ import './js/cookies';
 import './js/features';
 import './js/reviews';
 import './js/faq';
+import './js/home';

@@ -47,12 +47,13 @@
   font-size: 34px;
   padding-top: 36px;
   padding-bottom: 352px;
+  box-shadow: none;
 }
 
 @media only screen and (min-width: 1200px) {
   .home-title {
     font-size: 72px;
-    padding-top: 45px;
+    /* padding-top: 45px; */
   }
 }
 
@@ -86,9 +87,7 @@
   box-shadow: inset 0 6px 4px 0 rgba(0, 0, 0, 0.15),
     inset 0 -6px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #99ed58;
-  /* margin-top: 30px; */
   text-decoration: none;
-  transition: 0.3s ease;
 }
 
 .home-play-button:hover {
@@ -104,34 +103,35 @@
   max-height: 30px;
 }
 
-.home-letter-P-E {
-  color: #63ebf4;
-}
-
-.home-letter-U {
-  color: #ffa0fb;
-}
-
-.home-letter-Z {
-  color: #99ed58;
-}
-
-.home-letter-L {
-  color: #ff9191;
-}
-
 .home-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px; /* расстояние между надписью и кнопкой */
-  flex-wrap: wrap; /* для адаптива */
-  -webkit-text-stroke: 10px #2736e6;
+  gap: 24px;
+  flex-wrap: wrap;
+  -webkit-text-stroke: 20px #2736e6;
 }
 
 @media only screen and (min-width: 1200px) {
   .home-row {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #curved-text {
+    font-family: 'Titan One', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    color: #ffea5d;
+    margin-top: 60px;
+    text-shadow: 3px 3px 0 #2736e6; /* как на картинке */
+  }
+
+  #curved-text span {
+    display: inline-block;
+    margin: 0 -6px; /* почти нулевая ширина */
+    letter-spacing: -2px;
   }
 }
