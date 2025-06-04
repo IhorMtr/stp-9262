@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('[data-mobile-menu]');
   const body = document.querySelector('body');
   const icon = btn.querySelector('[data-header-icon]');
-  const menuList = mobileMenu.querySelector('.mobile-menu-list');
+  const menuList = mobileMenu.querySelector('[data-mobile-menu-list]');
 
   btn.addEventListener('click', handleOpener);
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   mobileMenu.addEventListener('click', event => {
-    if (!event.target.closest('.mobile-menu-body')) {
+    if (!event.target.closest('[data-mobile-menu-body]')) {
       closeMenu();
     }
   });
