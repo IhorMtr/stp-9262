@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia('(max-width: 767px)').matches) {
     return;
   }
+
   const marqueeContainer = document.querySelector('[data-marquee-container]');
   const marqueeContentList = document.querySelector('[data-animate-list]');
-
   if (!marqueeContainer || !marqueeContentList) {
     return;
   }
@@ -27,20 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   allItems.forEach(el => {
     el.style.marginRight = `${spaceBetween}px`;
   });
-
-  const computedListWidth = marqueeContentList.scrollWidth;
-
-  const keyframesRule = `
-  @keyframes scroll-left {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-${computedListWidth}px, 0, 0); }
-  }
-  `;
-
-  const dynamicStyle = document.querySelector('[data-dynamic-marquee]');
-  if (dynamicStyle) {
-    dynamicStyle.textContent += keyframesRule;
-  }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
