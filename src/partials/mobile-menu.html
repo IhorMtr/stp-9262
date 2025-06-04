@@ -1,46 +1,22 @@
-<!-- Мобильное меню -->
-<div class="menu">
-  <div class="menu-header">
-    <a href="#home">
-      <picture>
-        <source
-          srcset="
-            ./img/header-logo-mobile.png    1x,
-            ./img/header-logo-mobile-2x.png 2x
-          "
-          media="(max-width: 320px)"
-        />
-        <source
-          srcset="
-            ./img/header-logo-desktop.png    1x,
-            ./img/header-logo-desktop-2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <img class="menu-logo" src="./img/header-logo-mobile.png" alt="logo" />
-      </picture>
-    </a>
-    <button class="menu-close">
-      <!-- &times; -->
-      <svg class="faq-icon faq-icon-up" width="24" height="24">
-        <use href="/img/sprite.svg#icon-close_btn"></use>
-      </svg>
-    </button>
-  </div>
-
-  <div class="menu-body">
-    <nav class="menu-list">
-      <div class="menu-item"><a href="#home">Home</a></div>
-      <div class="menu-item"><a href="#description">Description</a></div>
-      <div class="menu-item"><a href="#advantages">Advantages</a></div>
-      <div class="menu-item"><a href="#features">Features</a></div>
-      <div class="menu-item"><a href="#reviews">Reviews</a></div>
-      <div class="menu-item"><a href="#how-to-play">How to Play</a></div>
-      <div class="menu-item"><a href="#faq">FAQ</a></div>
-      <div class="menu-item"><a href="#gallery">Gallery</a></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-body">
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-list item"><a href="#home">Home</a></li>
+        <li class="mobile-menu-list item">
+          <a href="#description">Description</a>
+        </li>
+        <li class="mobile-menu-list item">
+          <a href="#advantages">Advantages</a>
+        </li>
+        <li class="mobile-menu-list item"><a href="#features">Features</a></li>
+        <li class="mobile-menu-list item"><a href="#reviews">Reviews</a></li>
+        <li class="mobile-menu-list item">
+          <a href="#how-to-play">How to Play</a>
+        </li>
+        <li class="mobile-menu-list item"><a href="#faq">FAQ</a></li>
+        <li class="mobile-menu-list item"><a href="#gallery">Gallery</a></li>
+      </ul>
     </nav>
   </div>
 </div>
-
-<!-- Затемнение фона -->
-<div class="overlay"></div>
