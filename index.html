@@ -32,7 +32,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/stp-9262/favicon.png" />
     <title>Match Puzzle Travel</title>
     <script type="module" crossorigin src="/stp-9262/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stp-9262/assets/styles-f-mcoJr0.css">
+    <link rel="modulepreload" crossorigin href="/stp-9262/assets/vendor-scmLwB6L.js">
+    <link rel="stylesheet" crossorigin href="/stp-9262/assets/vendor-C7Njb_ko.css">
+    <link rel="stylesheet" crossorigin href="/stp-9262/assets/styles-D8CVwxOG.css">
   </head>
   <body>
     <header class="header">
@@ -117,62 +119,58 @@
         </li>
       </ul>
     </div>
-    <div class="desc-wrapper-img">
-      <div class="desc-rotated-japan">
-        <picture class="img-japan">
-          <source
-            media="(min-width: 1200px)"
-            srcset="/stp-9262/assets/desc-japan-desktop-1@-CyKWCzk-.png 1x, /stp-9262/assets/desc-japan-desktop-2@-DY-MAiGy.png 2x"
-          />
-
-          <source
-            media="(max-width: 320px)"
-            srcset="/stp-9262/assets/desc-japan-mobile-1@-cWZtZL0o.png 1x, /stp-9262/assets/desc-japan-mobile-2@-1Ckksu1k.png 2x"
-          />
-          <img
-            src="/stp-9262/assets/desc-japan-mobile-1@-cWZtZL0o.png"
-            alt="Description Japan"
-          />
-        </picture>
-      </div>
-
-      <div class="desc-rotated-london">
-        <picture class="img-london">
-          <source
-            media="(min-width: 1200px)"
-            srcset="/stp-9262/assets/desc-london-desktop-1@-X9xUXcXt.png 1x, /stp-9262/assets/desc-london-desktop-2@-D6r6gUNY.png 2x"
-          />
-
-          <source
-            media="(max-width: 320px)"
-            srcset="/stp-9262/assets/desc-london-mobile-1@-DNbxvXU9.png 1x, /stp-9262/assets/desc-london-mobile-2@-BZf5a7OR.png 2x"
-          />
-          <img
-            src="/stp-9262/assets/desc-london-mobile-1@-DNbxvXU9.png"
-            alt="Description London"
-          />
-        </picture>
-      </div>
-
-      <div class="desc-rotated-paris">
-        <picture class="img-paris">
-          <source
-            media="(min-width: 1200px)"
-            srcset="/stp-9262/assets/desc-paris-desktop-1@-CXPNnn6l.png 1x, /stp-9262/assets/desc-paris-desktop-2@-fMSl6vtN.png 2x"
-          />
-
-          <source
-            media="(max-width: 320px)"
-            srcset="/stp-9262/assets/desc-paris-mobile-1@-NgxWNiVT.png 1x, /stp-9262/assets/desc-paris-mobile-2@-B8mkNh2e.png 2x"
-          />
-          <img
-            src="/stp-9262/assets/desc-paris-mobile-1@-NgxWNiVT.png"
-            alt="Description Paris"
-          />
-        </picture>
-      </div>
+    <div class="swiper mySwiper">
+      <ul class="desc-wrapper-img swiper-wrapper">
+        <li class="desc-rotated-japan swiper-slide">
+          <picture class="img-japan">
+            <source
+              media="(min-width: 1200px)"
+              srcset="/stp-9262/assets/desc-japan-desktop-1@-CyKWCzk-.png 1x, /stp-9262/assets/desc-japan-desktop-2@-DY-MAiGy.png 2x"
+            />
+            <source
+              media="(max-width: 320px)"
+              srcset="/stp-9262/assets/desc-japan-mobile-1@-cWZtZL0o.png 1x, /stp-9262/assets/desc-japan-mobile-2@-1Ckksu1k.png 2x"
+            />
+            <img
+              src="/stp-9262/assets/desc-japan-mobile-1@-cWZtZL0o.png"
+              alt="Description Japan"
+            />
+          </picture>
+        </li>
+        <li class="desc-rotated-london swiper-slide">
+          <picture class="img-london">
+            <source
+              media="(min-width: 1200px)"
+              srcset="/stp-9262/assets/desc-london-desktop-1@-X9xUXcXt.png 1x, /stp-9262/assets/desc-london-desktop-2@-D6r6gUNY.png 2x"
+            />
+            <source
+              media="(max-width: 320px)"
+              srcset="/stp-9262/assets/desc-london-mobile-1@-DNbxvXU9.png 1x, /stp-9262/assets/desc-london-mobile-2@-BZf5a7OR.png 2x"
+            />
+            <img
+              src="/stp-9262/assets/desc-london-mobile-1@-DNbxvXU9.png"
+              alt="Description London"
+            />
+          </picture>
+        </li>
+        <li class="desc-rotated-paris swiper-slide">
+          <picture class="img-paris">
+            <source
+              media="(min-width: 1200px)"
+              srcset="/stp-9262/assets/desc-paris-desktop-1@-CXPNnn6l.png 1x, /stp-9262/assets/desc-paris-desktop-2@-fMSl6vtN.png 2x"
+            />
+            <source
+              media="(max-width: 320px)"
+              srcset="/stp-9262/assets/desc-paris-mobile-1@-NgxWNiVT.png 1x, /stp-9262/assets/desc-paris-mobile-2@-B8mkNh2e.png 2x"
+            />
+            <img
+              src="/stp-9262/assets/desc-paris-mobile-1@-NgxWNiVT.png"
+              alt="Description Paris"
+            />
+          </picture>
+        </li>
+      </ul>
     </div>
-
     <div class="desc-wrapper-second-part-text">
       <ul class="desc-list desc-part-2">
         <li class="desc-item">
@@ -1109,7 +1107,143 @@
   </div>
 </section>
 
-      
+      <section id="faq" class="faq-section">
+  <div class="container faq-comtainer">
+    <div class="faq-wrapper">
+      <div class="faq-title-wrapper">
+        <h2 class="faq-title">FAQ</h2>
+
+        <img
+          class="image-faq"
+          src="/stp-9262/assets/faq-dog-desktop@1x-CVyINF-l.png"
+          srcset="/stp-9262/assets/faq-dog-desktop@2x-BRB7sVui.png 2x"
+          alt="FAQ illustration"
+        />
+      </div>
+      <div class="faq-accordion-wrapper">
+        <ul class="accordion" data-accordion>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">Is Match Puzzle Travel free to play?</h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="20" height="12">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                  <!-- <use href="/img/sprite.svg#icon-icon-down"></use> -->
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Yes! The game is completely free with optional in-app purchases.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">Can I play offline?</h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Absolutely. All standard levels are playable without an internet
+                connection.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">
+                Are the levels random or based on real places?
+              </h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Each chapter is inspired by a real-world city or culture,
+                complete with visual references and fun facts.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">How do I unlock new countries?</h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Complete current location levels and collect enough stars to
+                unlock the next region.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">Is there a way to track my journey?</h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Yes! Use your in-game travel album to view places you’ve
+                completed and your collected souvenirs.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <div class="accordion-header" data-accordion-header>
+              <h3 class="faq-question">Will more destinations be added?</h3>
+              <button class="accordion-button" aria-label="Toggle answer">
+                <svg class="faq-icon faq-icon-down" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-down"></use>
+                </svg>
+                <svg class="faq-icon faq-icon-up" width="24" height="24">
+                  <use href="/stp-9262/assets/sprite-BG7pvybN.svg#icon-icon-up"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="accordion-content" data-accordion-content>
+              <p class="faq-answer-text">
+                Yes! New countries and cities are regularly introduced through
+                updates.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section id="gallery" class="gallery-section">
   <div class="container gallery-container">
     <h2 class="gallery-title">Gallery</h2>
