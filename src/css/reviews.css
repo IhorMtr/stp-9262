@@ -87,7 +87,6 @@
     100% 93.333%,
     100% 0%
   );
-
   background: linear-gradient(270deg, #d49b29 0%, #f2de58 100%);
 }
 .reviews-list-item-header::after {
@@ -265,7 +264,7 @@
   }
   .reviews-list-item-header::before {
     top: 3px;
-    left: -19px;
+    left: -24px;
     width: 32px;
     height: 33px;
     clip-path: polygon(

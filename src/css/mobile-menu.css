@@ -9,8 +9,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 75px;
-  left: 20px;
+  margin-top: 75px;
+  margin-left: 20px;
+  /* top: 75px; */
+  /* left: 20px; */
   position: absolute;
 }
 
@@ -49,7 +51,7 @@
 
 body.no-scroll {
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .header-mob-button {
