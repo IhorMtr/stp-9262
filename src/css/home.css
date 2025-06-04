@@ -1,41 +1,42 @@
 .home-section {
+  background-color: #3b82d4;
+  padding-bottom: 0 16px;
+}
+
+.home-container {
   position: relative;
   text-align: center;
   padding: 0px 16px;
-  padding-top: 140px;
-  background-image: url('../img/hero/hero-img-mobile-@1x.png');
+
+  background-image: url('../img/home/home-img-mobile-@1x.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 100%;
   margin: 0 auto;
-  height: 600px;
-  background-color: #3b82d4;
+
   box-sizing: border-box;
+  margin-top: 65px;
 }
 
 @media screen and (max-width: 1199px) and (min-resolution: 192dpi) {
-  .home-section {
-    background-image: url('../img/hero/hero-img-mobile-@2x.png');
+  .home-container {
+    background-image: url('../img/home/home-img-mobile-@2x.png');
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .home-section {
-    /* border-radius: 30px; */
-    max-width: 996px;
-    /* padding-top: 188px;
-      padding-bottom: 188px; */
-    background-image: url('../img/hero/hero-img-desktop-@1x.png');
-  }
-
-  .home-img-google-play {
+  .home-container {
+    background-image: url('../img/home/home-img-desktop-@1x.png');
     border-radius: 30px;
+    width: 996px;
+    height: 550px;
   }
 }
 
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-  .home-section {
-    background-image: url('../img/hero/hero-img-desktop-@2x.png');
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .home-container {
+    background-image: url('../img/home/home-img-desktop-@2x.png');
   }
 }
 
@@ -44,7 +45,15 @@
   font-weight: 400;
   color: #ffea5d;
   font-size: 34px;
-  margin-bottom: 202px;
+  padding-top: 36px;
+  padding-bottom: 352px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-title {
+    font-size: 72px;
+    padding-top: 45px;
+  }
 }
 
 .home-desc {
@@ -53,6 +62,12 @@
   font-size: 22px;
   color: #ffea5d;
   white-space: nowrap;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-title {
+    font-size: 38px;
+  }
 }
 
 .home-play-button {
@@ -90,11 +105,11 @@
 }
 
 .home-letter-P-E {
-  color: #4ff7ff;
+  color: #63ebf4;
 }
 
 .home-letter-U {
-  color: #f7d7d1;
+  color: #ffa0fb;
 }
 
 .home-letter-Z {
@@ -102,7 +117,7 @@
 }
 
 .home-letter-L {
-  color: #f7d7d1;
+  color: #ff9191;
 }
 
 .home-row {
@@ -112,4 +127,11 @@
   gap: 24px; /* расстояние между надписью и кнопкой */
   flex-wrap: wrap; /* для адаптива */
   -webkit-text-stroke: 10px #2736e6;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-row {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
