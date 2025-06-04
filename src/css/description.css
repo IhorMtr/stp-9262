@@ -287,20 +287,3 @@
     display: block;
   }
 }
-
-@media only screen and (max-width: 1199px) {
-  .desc-wrapper-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .desc-wrapper-img img {
-    width: 100%;
-    max-width: 284px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-  }
-}
