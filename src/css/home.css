@@ -1,0 +1,115 @@
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 0px 16px;
+  padding-top: 140px;
+  background-image: url('../img/hero/hero-img-mobile-@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 600px;
+  background-color: #3b82d4;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1199px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('../img/hero/hero-img-mobile-@2x.png');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    /* border-radius: 30px; */
+    max-width: 996px;
+    /* padding-top: 188px;
+      padding-bottom: 188px; */
+    background-image: url('../img/hero/hero-img-desktop-@1x.png');
+  }
+
+  .hero-img-google-play {
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('../img/hero/hero-img-desktop-@2x.png');
+  }
+}
+
+.hero-title {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  color: #ffea5d;
+  font-size: 34px;
+  margin-bottom: 202px;
+}
+
+.hero-desc {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffea5d;
+  white-space: nowrap;
+}
+
+.play-button {
+  border: 3px solid #2d8fcc;
+  border-radius: 14px;
+  padding: 9px 16px;
+  width: 100%;
+  max-width: 282px;
+  height: 48px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: inset 0 6px 4px 0 rgba(0, 0, 0, 0.15),
+    inset 0 -6px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #99ed58;
+  /* margin-top: 30px; */
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #ffea5d;
+}
+
+.play-button:active {
+  background-color: #3b82d4;
+}
+
+.hero-img-google-play {
+  max-width: 105px;
+  max-height: 30px;
+}
+
+.hero-letter-P-E {
+  color: #4ff7ff;
+}
+
+.hero-letter-U {
+  color: #f7d7d1;
+}
+
+.hero-letter-Z {
+  color: #99ed58;
+}
+
+.hero-letter-L {
+  color: #f7d7d1;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* расстояние между надписью и кнопкой */
+  flex-wrap: wrap; /* для адаптива */
+  -webkit-text-stroke: 10px #2736e6;
+}

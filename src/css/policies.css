@@ -1,3 +1,16 @@
+.policy-link-return:hover,
+.policy-link-return:focus {
+  text-decoration: underline;
+}
+
+.policy-link-return:active {
+  color: var(--blue-stroke);
+}
+
+.policy-link-return:active .policy-header-return-btn {
+  fill: var(--blue-stroke);
+}
+
 .policy-section {
   padding: 0;
 }
