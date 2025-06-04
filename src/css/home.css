@@ -45,16 +45,25 @@
   font-weight: 400;
   color: #ffea5d;
   font-size: 34px;
-  padding-top: 36px;
-  padding-bottom: 352px;
   box-shadow: none;
+  display: inline-block;
+  width: auto;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
   .home-title {
     font-size: 72px;
-    /* padding-top: 45px; */
+    padding-bottom: 282px;
   }
+}
+
+.part-one {
+}
+
+.part-two {
+  padding-top: 5px;
+  padding-bottom: 352px;
 }
 
 .home-desc {
@@ -119,19 +128,56 @@
   }
 }
 
+#curved-text {
+  font-family: 'Titan One', sans-serif;
+  font-size: 64px;
+  text-align: center;
+  color: #ffea5d;
+  margin-top: 60px;
+  text-shadow: 3px 3px 0 #2736e6;
+}
+
+#curved-text span {
+  display: inline-block;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 1200px) {
-  #curved-text {
+  #curved-text-desktop {
     font-family: 'Titan One', sans-serif;
     font-size: 64px;
     text-align: center;
     color: #ffea5d;
     margin-top: 60px;
-    text-shadow: 3px 3px 0 #2736e6; /* как на картинке */
+    text-shadow: 3px 3px 0 #2736e6;
   }
 
-  #curved-text span {
+  #curved-text-desktop span {
     display: inline-block;
-    margin: 0 -6px; /* почти нулевая ширина */
+    margin: 0 -6px;
     letter-spacing: -2px;
+  }
+}
+
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
   }
 }
