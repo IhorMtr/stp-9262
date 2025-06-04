@@ -44,24 +44,34 @@
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   color: #ffea5d;
-  font-size: 34px;
+  font-size: 45px;
   box-shadow: none;
   display: inline-block;
   width: auto;
   text-align: center;
+  -webkit-text-stroke: 15px #2736e6;
+  letter-spacing: 4px;
 }
 
 @media only screen and (min-width: 1200px) {
   .home-title {
     font-size: 72px;
-    padding-bottom: 282px;
+    padding-bottom: 260px;
+    padding-top: 46px;
+    -webkit-text-stroke: 18px #2736e6;
+    letter-spacing: 8px;
   }
 }
 
 .part-one {
+  padding-top: 36px;
 }
 
 .part-two {
+  padding-top: 5px;
+}
+
+.part-three {
   padding-top: 5px;
   padding-bottom: 352px;
 }
@@ -72,11 +82,13 @@
   font-size: 22px;
   color: #ffea5d;
   white-space: nowrap;
+  -webkit-text-stroke: 10px #2736e6;
 }
 
 @media only screen and (min-width: 1200px) {
-  .home-title {
+  .home-desc {
     font-size: 38px;
+    -webkit-text-stroke: 13px #2736e6;
   }
 }
 
@@ -119,6 +131,7 @@
   gap: 24px;
   flex-wrap: wrap;
   -webkit-text-stroke: 20px #2736e6;
+  padding-bottom: 24px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -141,14 +154,6 @@
   display: inline-block;
 }
 
-.line-one,
-.line-two {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 @media only screen and (min-width: 1200px) {
   #curved-text-desktop {
     font-family: 'Titan One', sans-serif;
@@ -161,8 +166,8 @@
 
   #curved-text-desktop span {
     display: inline-block;
-    margin: 0 -6px;
-    letter-spacing: -2px;
+    margin: 0 -3px;
+    letter-spacing: 3px;
   }
 }
 

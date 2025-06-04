@@ -16,39 +16,48 @@ $(document).ready(function () {
       .dir(1);
 
     $('#curved-text-desktop span').css({
-      margin: '0 -6px',
-      'letter-spacing': '-2px',
+      margin: '0 -3px',
+      'letter-spacing': '3px',
     });
   } else {
-    setTimeout(() => {
-      new CircleType(document.getElementById('curved-text-line-one'))
-        .radius(1800)
-        .dir(1);
+    // ID всех строк на мобилке
+    const mobileTextIds = [
+      'curved-text-line-one',
+      'curved-text-line-two',
+      'curved-text-line-three',
+    ];
 
-      new CircleType(document.getElementById('curved-text-line-two'))
-        .radius(1800)
-        .dir(1);
+    // Инициализация каждой строки CircleType
+    setTimeout(() => {
+      mobileTextIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          new CircleType(el).radius(1800).dir(1);
+        }
+      });
     }, 50);
   }
 
-  // Цвета букв + настройка пробелов
+  // Раскраска букв и настройка пробелов
   $('[id^="curved-text"] span').each(function () {
     const letter = $(this).text();
+    const $this = $(this);
+
     if (letter === 'P' || letter === 'E') {
-      $(this).css('color', '#4ff7ff');
+      $this.css('color', '#4ff7ff');
     } else if (letter === 'U') {
-      $(this).css('color', '#f7d7d1');
+      $this.css('color', '#f7d7d1');
     } else if (letter === 'Z') {
-      $(this).css('color', '#99ed58');
+      $this.css('color', '#99ed58');
     } else if (letter === 'L') {
-      $(this).css('color', '#f7d7d1');
+      $this.css('color', '#f7d7d1');
     }
 
-    // Пробелы
+    // Обработка пробела
     if (letter === '\u00A0') {
-      $(this).css({
+      $this.css({
         display: 'inline-block',
-        width: '10px',
+        width: 'spaceWidth',
       });
     }
   });
