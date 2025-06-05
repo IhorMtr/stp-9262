@@ -83,7 +83,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .accordion-item:hover .faq-icon {
+  .accordion-header:hover .faq-icon {
     fill: var(--yellow);
   }
 }
@@ -188,6 +188,12 @@
     height: auto;
     align-self: center;
   }
+}
+
+.accordion-header,
+.accordion-button,
+.faq-question {
+  user-select: none;
 }
 
 .accordion-item.active {
