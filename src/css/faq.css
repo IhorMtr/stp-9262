@@ -101,11 +101,11 @@
 }
 
 .accordion-content {
-  max-height: 0;
+  max-height: 139px;
   overflow: hidden;
   background-color: transparent;
-  transition: max-height 0, 3s ease, margin-top 0, 3s ease;
 }
+
 .accordion-item.active .accordion-content {
   max-height: 500px;
 }
