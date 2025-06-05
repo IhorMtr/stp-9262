@@ -72,13 +72,25 @@
   height: 40px;
   cursor: pointer;
 }
+
 .faq-icon {
   width: 18px;
   height: 10px;
-  fill: #3b82d4;
+  fill: var(--blue);
   transition: opacity 0.3s ease;
   display: block;
   pointer-events: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion-button:hover .faq-icon,
+  .accordion-button:focus .faq-icon {
+    fill: var(--yellow);
+  }
+}
+
+.accordion-button:active .faq-icon {
+  fill: var(--blue-stroke);
 }
 
 .accordion-item.active .faq-icon {
