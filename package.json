@@ -19,6 +19,9 @@
   },
   "dependencies": {
     "accordion-js": "^3.4.1",
+    "circletype": "^2.3.0",
+    "jquery": "^3.7.1",
+    "lettering.js": "^0.8.2",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.2.8",
     "vite-plugin-full-reload": "^1.2.0",
