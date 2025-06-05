@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper('[data-my-swiper]', {
     slidesPerView: 'auto',
     spaceBetween: 10,
   });

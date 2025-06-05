@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: center;
   border: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .features-chevron-svg {

@@ -1,21 +1,10 @@
 .faq-section {
   background-color: #f7d7d1;
-  /* padding: 40px 16px; */
-}
-
-@media screen and (min-width: 1200px) {
-  .faq-section {
-    /* padding-top: 68px;
-    padding-bottom: 68px;
-    padding-right: 178px;
-    padding-left: 140px; */
-  }
 }
 
 .faq-wrapper {
   display: flex;
   flex-direction: column;
-  /* gap: 45px; */
 }
 @media screen and (min-width: 1200px) {
   .faq-wrapper-img-accordion {
@@ -31,15 +20,8 @@
   }
 }
 
-/* .faq-title-wrapper, */
 .faq-accordion-wrapper {
   flex: 1;
-}
-
-@media (min-width: 1200px) {
-  .faq-accordion-wrapper {
-    /* margin-top: 210px; */
-  }
 }
 
 .accordion {
@@ -61,10 +43,6 @@
 }
 
 .accordion-header {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #101010;
   cursor: pointer;
   background-color: #fff;
   border-radius: 12px;
@@ -81,12 +59,6 @@
   padding: 14px 16px;
 }
 
-/* @media (min-width: 1200px) {
-  .accordion-header {
-    max-width: 595px;
-  }
-} */
-
 .accordion-button {
   background: none;
   border: none;
@@ -96,7 +68,6 @@
   align-items: center;
   justify-content: center;
   margin-left: 12px;
-  /* position: relative; */
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -105,32 +76,16 @@
   width: 18px;
   height: 10px;
   fill: #3b82d4;
-
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-
   transition: opacity 0.3s ease;
   display: block;
   pointer-events: none;
 }
-.faq-icon-down {
-  opacity: 1;
+
+.accordion-item.active .faq-icon {
+  transform: rotate(180deg);
 }
-.faq-icon-up {
-  opacity: 0;
-}
-.accordion-item.active .faq-icon-down {
-  opacity: 0;
-}
-.accordion-item.active .faq-icon-up {
-  opacity: 1;
-}
+
 .accordion-content {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #101010;
   max-height: 0;
   overflow: hidden;
   background-color: transparent;
@@ -147,11 +102,6 @@
 }
 
 .faq-title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  letter-spacing: 0.04em;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,10 +123,8 @@
 }
 
 .faq-question {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #101010;
   background-color: #fff;
   min-height: 38px;
   max-width: 180px;
@@ -202,10 +150,7 @@
 }
 
 .faq-answer-text {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  color: #101010;
 }
 
 @media (min-width: 1200px) {
@@ -263,4 +208,8 @@
 .faq-question.faq-small-faq {
   max-width: 519px;
   margin-left: auto;
+}
+
+.accordion-item {
+  -webkit-tap-highlight-color: transparent;
 }

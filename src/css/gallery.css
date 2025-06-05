@@ -7,10 +7,12 @@
   border-radius: 17px;
 }
 
-.gallery-section img:hover,
-.gallery-section img:focus {
-  box-shadow: 0 4px 30px 15px #4ff7ff;
-  transform: scale(1.03);
+@media only screen and (min-width: 1200px) {
+  .gallery-section img:hover,
+  .gallery-section img:focus {
+    box-shadow: 0 4px 30px 15px #4ff7ff;
+    transform: scale(1.03);
+  }
 }
 
 .gallery-container {
@@ -28,18 +30,13 @@
 }
 
 .gallery-title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  letter-spacing: 0.04em;
   color: #3b82d4;
-  -webkit-text-stroke: 2px var(--white);
+  -webkit-text-stroke: 4px var(--white);
   margin-bottom: 47px;
 }
 
 @media only screen and (min-width: 1200px) {
   .gallery-title {
-    font-size: 48px;
     margin-bottom: 76px;
     -webkit-text-stroke: 10px var(--white);
   }
