@@ -1,13 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-// new Accordion('.accordion', {
-//   duration: 300,
-//   showMultiple: false,
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
-  const accordion = new Accordion('.accordion', {
+  const accordion = new Accordion('[data-accordion]', {
     duration: 300,
     showMultiple: false,
     openOnInit: [0],
@@ -16,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     panelClass: 'accordion-content',
     activeClass: 'active',
     beforeOpen: currentElement => {
-      const items = document.querySelectorAll('.accordion-item');
+      const items = document.querySelectorAll('[data-accordion-item]');
       items.forEach(item => {
         if (item !== currentElement) {
           item.classList.remove('active');

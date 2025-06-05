@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const popup = document.querySelector('.cookie-pop-page');
+  const popup = document.querySelector('[data-cookie-open]');
   const buttons = document.querySelectorAll('[data-btn-close]');
   const LS_KEY = 'cookie-popup-acknowledged';
 
