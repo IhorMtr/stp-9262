@@ -2,16 +2,6 @@
   background-color: #fff5b4;
 }
 
-.advantages-container {
-  padding: 40px 16px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .advantages-container {
-    padding: 68px 102px;
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .advantages-photo-one,
   .advantages-photo-two {

@@ -83,18 +83,21 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .accordion-button:hover .faq-icon,
-  .accordion-button:focus .faq-icon {
+  .accordion-item:hover .faq-icon {
     fill: var(--yellow);
   }
 }
 
-.accordion-button:active .faq-icon {
+.accordion-item:active .faq-icon {
   fill: var(--blue-stroke);
 }
 
-.accordion-item.active .faq-icon {
+.accordion-item .faq-icon {
   transform: rotate(180deg);
+}
+
+.accordion-item.active .faq-icon {
+  transform: rotate(0deg);
 }
 
 .accordion-content {

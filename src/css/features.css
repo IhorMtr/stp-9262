@@ -69,14 +69,22 @@
   position: absolute;
   width: 58px;
   height: 58px;
-  background: var(--blue-eff);
   border-radius: 6px;
   filter: blur(45px);
-  transform: rotate(5deg);
+  background: var(--blue-eff);
+  transform: rotate(2deg);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(5deg);
   z-index: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .features-image-glow {
+    width: 68px;
+    height: 68px;
+    box-shadow: 0 0 40px 10px var(--blue-eff);
+  }
 }
 
 .features-image-wrapper picture,
