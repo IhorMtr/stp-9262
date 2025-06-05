@@ -1,7 +1,6 @@
 .htp-section {
   background: var(--yellow-von);
   padding-top: 0;
-  overflow: hidden;
 }
 
 .htp-list-item {
@@ -61,9 +60,12 @@
   font-weight: 400;
 }
 
+.htp-title-wrapper {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 1200px) {
   .htp-title {
-    overflow: visible;
     font-size: 180px;
     line-height: 91%;
     margin-bottom: 32px;

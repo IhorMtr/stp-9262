@@ -178,6 +178,20 @@
   flex-direction: column;
 }
 
+@media screen and (min-width: 1200px) {
+  .reviews-wrapper {
+    overflow: hidden;
+  }
+
+  .reviews-second-wrapper {
+    padding-bottom: 10px;
+  }
+
+  #reviews {
+    padding-bottom: 58px;
+  }
+}
+
 .visible {
   display: block !important;
 }
@@ -244,10 +258,6 @@
 
   .reviews-list-item {
     margin-bottom: 0;
-  }
-
-  #reviews {
-    overflow: hidden;
   }
 
   #reviews .container {
